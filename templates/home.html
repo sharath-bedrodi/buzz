@@ -1,0 +1,219 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ecommerce Website</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+      
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+    
+  <script src="https://kit.fontawesome.com/dad03e859c.js" crossorigin="anonymous"></script>
+  <!----------x---------------Font Awesome Icons --------x------->
+
+  <!----------x---------------Google font --------x------->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Berkshire+Swash&family=Comic+Neue:wght@700&family=Gentium+Book+Plus:wght@400;700&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=Lexend+Deca:wght@500&family=Lexend:wght@500&family=Montserrat:wght@500&family=Open+Sans:wght@500;800&family=Roboto:wght@100;400&family=Sue+Ellen+Francisco&family=Work+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+      
+      <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900;&display:swap">
+       <!----------x---------------Google font --------x----------------->
+ 
+    </head>
+
+    <body>
+ <section id="header">
+            <a href="#"><img src="/static/images/logof.png"></a>
+            <div>
+      <ul id="navbar">
+        <form action="/search" method="get">
+          <input type="search" id="search" name="query" placeholder="Search..." aria-label="Search">
+          </form>
+ <li><a href="index.html" class="active">Home</a></li>
+ <li><a href="{{ url_for('about') }}">About</a></li>
+ <li><a href="{{ url_for('login') }}">Login</a></li>
+ <li><a href="{{ url_for('contact') }}">Contact</a></li>
+ <li><a href="cart.html" id="lg-bag"><i class="fal fa-shopping-bag"></i></a>
+   <span class="quantity">0</span>
+ </div>
+<div id="mobile">
+  <a href="cart.html" ><i class="fal fa-shopping-bag"></i>
+    <span class="quantity">0</span>
+  </a>
+</div>
+        </section>
+
+<section id="hero">
+  <h4>Trade-in-fair</h4>
+  <h2>Super value deals</h2>
+  <h1>On all Products</h1>
+  <p>Save more with coupons and up to 70% off!</p>
+  <button>Shop Now</button>
+  
+</section>
+
+<section id="feature" class="section-p1">
+  <div class="fe-box">
+    <img src="/static/images/fr.png" alt="">
+    <h6>Free Shipping</h6>
+  </div>
+  
+  <div class="fe-box">
+    <img src="/static/images/or.png" alt="">
+    <h6>Online Order</h6>
+  </div>
+  
+  <div class="fe-box">
+    <img src="/static/images/sm.jpg" alt="">
+    <h6>Save Money</h6>
+  </div>
+  
+  <div class="fe-box">
+    <img src="/static/images/pr.jpg" alt="">
+    <h6>Promotions</h6>
+  </div>
+  
+  <div class="fe-box">
+    <img src="/static/images/sl.png" alt="">
+    <h6>Happy Sell</h6>
+  </div>
+  
+  <div class="fe-box">
+    <img src="/static/images/cs.png" alt="">
+    <h6>F24/7 Support</h6>
+  </div>
+  
+</section>
+
+<section id="product1" class="section-p1">
+  <h2>Featured Products</h2>
+  <p>Summer Collection New Modern Design</p>
+  <div class="pro-container">
+    <div class="pro" onclick="window.location.href='https://codepen.io/Motun/full/OJBwbrQ'">
+      <img src="/static/images/product3.jpg" alt="">
+      <div class="des">
+        <span>Carbon</span>
+        <h5>Carbon 50v Battery</h5>
+        <h4>₹120</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    <div class="pro">
+      <img src="/static/images/product6.jpg" alt="">
+      <div class="des">
+        <span>Bajaj</span>
+        <h5>Bajaj Bulbs</h5>
+        <h4>₹300</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    <div class="pro">
+      <img src="/static/images/product2.jpg" alt="">
+      <div class="des">
+        <span>Luminous</span>
+        <h5>Luminous Invertor</h5>
+        <h4>₹21000</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    <div class="pro">
+      <img src="/static/images/product7.jpg" alt="">
+      <div class="des">
+        <span>LED Light</span>
+        <h5>30W Square LED</h5>
+        <h4>₹300</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div> 
+    
+    <div class="pro">
+      <img src="/static/images/product8.jpg" alt="">
+      <div class="des">
+        <span>Switch Board</span>
+        <h5>Blue Switches</h5>
+        <h4>₹400</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    
+    <div class="pro">
+      <img src="/static/images/product9.jpg" alt="">
+      <div class="des">
+        <span>Heaven Light</span>
+        <h5>Tubelight</h5>
+        <h4>₹500</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    
+    <div class="pro">
+      <img src="/static/images/product10.jpg" alt="">
+      <div class="des">
+        <span>Howell</span>
+        <h5>Bell Switch</h5>
+        <h4>₹350</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    
+    <div class="pro">
+      <img src="/static/images/product11.jpg" alt="">
+      <div class="des">
+        <span>Colors</span>
+        <h5>Multi Color Bulbs</h5>
+        <h4>₹50</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+  </div>
+</section>
+
+<section id="banner" class="section-m1">
+  <h4> Repair Service</h4>
+  <h2>Up to <span>70% off </span> - All Products and Accessories</h2>
+  <button class="btn normal">Explore more</button>
+  </section>
+   
+  </div>
+  
+</section>
+
+<footer class="section-p1">
+  <div class="col">
+    <a href="#"><img class="logo" src="/static/images/logo.png" alt="Buzz Logo"></a>
+    <h4>Contact</h4>
+    <p><strong>Address:</strong> Sullia</p>
+    <p><strong>Phone:</strong> +91832439900</p>
+    <p><strong>Hours:</strong> 09.00 - 05.00, Mon - Sat</p>
+  </div>
+
+  <div class="col">
+    <h4>About Buzz</h4>
+    <p>Buzz is your one-stop online shopping destination. We offer a wide variety of products at affordable prices for all your shopping needs.</p>
+  </div>
+
+  <div class="copyright">
+    <p>© 2023 Buzz Online Shopping. All rights reserved! Made by Buzz Team</p>
+  </div>
+</footer>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </body>
+
+</html>

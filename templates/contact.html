@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Buzz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style3.css') }}">
+</head>
+<body>
+   
+    <section class="contact-page">
+        <div class="contact-info">
+            <h1>Contact Us</h1>
+            <p>If you have any questions, feel free to reach out to us. We're here to help!</p>
+            
+            <h2>Our Contact Details</h2>
+            <ul>
+                <li><strong>Phone:</strong> +91832439900</li>
+                <li><strong>Email:</strong> contact@buzzstore.com</li>
+                <li><strong>Address:</strong> Sullia, Karnataka, India</li>
+            </ul>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="/submit_form" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="map">
+        <h2>Our Location</h2>
+        <!-- Embed a Google Map here -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.679693924936!2d74.9745712!3d12.7830109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf3ad7f9f7e77f%3A0x5c57775c7eb8fa44!2sSullia%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1626983802638!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Buzz Store. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

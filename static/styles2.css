@@ -1,0 +1,175 @@
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/* About Us Section Styling */
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-image: url(/static/images/hoo.png);
+    text-align: center;
+    gap: 30px;
+}
+
+.about-us h1 {
+    font-size: 48px;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    background-color: rgb(9, 255, 9);
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-us h2 {
+    font-size: 32px;
+    color: #000000;
+    margin-top: 50px;
+    font-weight: 600;
+    background-color: rgb(9, 255, 9);
+    height: 40px;
+    text-transform: uppercase;
+}
+
+
+.about-us ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.about-us ul li::before {
+    content: '\2022';
+    color: #042c16;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Image Section */
+.about-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #eee;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 5px 0;
+    color: #999;
+}
+
+footer .logo {
+    margin-bottom: 20px;
+    max-width: 150px;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 30px;
+    color: #888;
+}
+
+/* Hover effects for links */
+nav ul li a:hover {
+    color: #00aaff;
+    transition: color 0.3s ease;
+}
+
+footer .col a {
+    color: #666;
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+footer .col a:hover {
+    color: #00aaff;
+    transition: color 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 920px) {
+    .about-us h1 {
+        font-size: 40px;
+    }
+    .about-us h2 {
+        font-size: 28px;
+    }
+    .about-us ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 477px) {
+    .about-us h1 {
+        font-size: 32px;
+    }
+    .about-us p {
+        font-size: 14px;
+    }
+    .about-us h2 {
+        font-size: 24px;
+    }
+    footer {
+        padding: 20px 10px;
+    }
+}
